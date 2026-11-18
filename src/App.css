@@ -1,0 +1,178 @@
+
+/* Main Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #263449;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #071a36;
+    color: white;
+    padding: 18px 30px;
+}
+
+.navbar > div {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+.navbar > div > a {
+    color: #f5c542;
+    font-size: 23px;
+}
+
+.navbar a:hover {
+    color: #f5c542;
+}
+
+.nav-bookings p {
+    color: #f5c542;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #071a36, #174477);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.hero h1 {
+    color: #f5c542;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+/* Match Schedule */
+
+.matches-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.matches-section h2 {
+    text-align: center;
+    color: #071a36;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.match-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* Match Cards */
+
+.match-list article {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 5px solid #f5c542;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.match-list article h3 {
+    color: #102c55;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.match-list article p {
+    margin: 10px 0;
+}
+
+.match-list article button {
+    background: #071a36;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.match-list article button:hover {
+    background: #174477;
+}
+
+.match-list article button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+/* Footer */
+
+footer {
+    background: #071a36;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 25px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 18px;
+    }
+
+    .navbar > div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .match-list {
+        grid-template-columns: 1fr;
+    }
+
+    .matches-section h2 {
+        font-size: 24px;
+    }
+}
